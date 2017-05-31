@@ -80,7 +80,7 @@ Descending?
 <?php
 $checked_hide_ksps = "";
 if (isset($_COOKIE['hide_ksps']) && $_COOKIE['hide_ksps'] == '1') {
-    $checked_hide_ksps = "checked";
+        $checked_hide_ksps = "checked";
 }
 ?>
 <span class="settings_element">
@@ -97,3 +97,4 @@ Hide "Known Service Problems"
   <button class="btn btn-primary" onClick="$('#settings-form').submit();">Save changes</button>
 </div>
 </div>
+

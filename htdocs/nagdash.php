@@ -186,6 +186,7 @@ if (isset($filter_hide_ksps) && $filter_hide_ksps == 1) {
         <table class="widetable known_service" id="known_services">
         <tr><th width="30%">Hostname</th><th width="37%">Service</th><th width="18%">State</th><th width="10%">Duration</th><th width="5%">Attempt</th></tr>
     <?php
+
     foreach($known_services as $service) {
         if ($service['is_ack']) $status_text = "ack";
         if ($service['is_downtime']) $status_text = "downtime {$service['downtime_remaining']}";
@@ -217,3 +218,4 @@ foreach ($curl_stats as $server => $server_stats) {
 }
 
 ?>
+
